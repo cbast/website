@@ -1,0 +1,6 @@
+---
+hide:
+  - toc
+---
+
+# Bienvenue / Welcome

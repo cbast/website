@@ -1,0 +1,41 @@
+site_name: Sébastien Frigon
+site_description: Website that is useless for now
+site_author: Sébastien Frigon
+site_url: https://frigon.xyz
+repo_url: https://github.com/cbast/cbast.github.io/
+nav:
+  - Home: index.md
+  - Blog:
+    - On 2023-05-11: en/blog/2023-05-11.md
+theme:
+  name: material
+
+  logo: images/cbast-logo.svg
+  favicon: images/favicon.png
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/brightness-2
+        name: Switch to light mode
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/todo
+      name: Sébastien Frigon on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/cbast
+      name: cbast on GitHub
+plugins:
+  - tags:
+      tags_file: en/blog/index.md
