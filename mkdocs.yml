@@ -6,7 +6,7 @@ repo_url: https://github.com/cbast/website/
 nav:
   - Home: index.md
   - Blog:
-    - On 2023-05-11: en/blog/2023-05-11.md
+    - WSL on a different Drive: en/blog/2023-05-19_WSL_Drive.md
 theme:
   name: material
 
