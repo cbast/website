@@ -10,6 +10,7 @@ nav:
     - PC Setup - FZF : en/blog/2023-05-25_fzf.md
   - Braindump:
     - Home: en/braindump/index.md
+    - Nix: en/braindump/Nix.md
 theme:
   name: material
 
