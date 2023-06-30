@@ -2,4 +2,5 @@
 author: Sébastien Frigon
 ---
 
-# About
+# Braindump
+There's so much to learn. Here's a list of things I found interesting or would like to read.
