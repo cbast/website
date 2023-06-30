@@ -9,7 +9,7 @@ nav:
     - WSL on a different Drive: en/blog/2023-05-19_WSL_Drive.md
     - PC Setup - FZF : en/blog/2023-05-25_fzf.md
   - Braindump:
-    - Home: index.md
+    - Home: en/braindump/index.md
 theme:
   name: material
 
