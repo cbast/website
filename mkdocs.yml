@@ -12,6 +12,7 @@ nav:
     - Home: en/braindump/index.md
     - DevContainer: en/braindump/DevContainer.md
     - Nix: en/braindump/Nix.md
+    - Bookmarklet: en/braindump/Bookmarklet.md
 theme:
   name: material
 
