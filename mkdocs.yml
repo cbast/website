@@ -13,6 +13,7 @@ nav:
     - DevContainer: en/braindump/DevContainer.md
     - Nix: en/braindump/Nix.md
     - Bookmarklet: en/braindump/Bookmarklet.md
+    - Heredoc: en/braindump/Heredoc.md
 theme:
   name: material
 
