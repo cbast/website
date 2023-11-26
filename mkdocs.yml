@@ -14,6 +14,7 @@ nav:
     - Nix: en/braindump/Nix.md
     - Bookmarklet: en/braindump/Bookmarklet.md
     - Heredoc: en/braindump/Heredoc.md
+    - Docker: en/braindump/Docker.md
 theme:
   name: material
 
