@@ -56,6 +56,30 @@ done <<<$(cat chapters.json \
 ffmpeg  -i "$in" $splits
 ```
 
+# Set MP3 tags
+```bash
+#!/bin/bash
+# Description: Split an 
+# Requires: ffmpeg, jq
+# Author: Hasan Arous
+# License: MIT
+
+in="$1"
+out="$2"
+
+
+ARTIST=$(ffprobe -i "${in}" -show_entries format_tags=artist -of json | jq -r '.format.tags.artist')
+TITLE=$(ffprobe -i "${in}" -show_entries format_tags=title -of json | jq -r '.format.tags.title')
+echo "ARTIST = ${ARTIST}"
+echo "TITLE = ${TITLE}"
+
+while read track title; do
+	echo "track=${track}"
+	#id3v2 -T "${track}"-t "${title}" -a "${ARTIST}" -A "${TITLE}" ${out}/${title}.mp3
+done <<<$(ffprobe -i "$in" -print_format json -show_chapters \
+	| jq -r  '.chapters[] | {id, "title": (.tags.title | sub(" "; "_"))} | join(" ")')
+```
+
 # Reference
 - [How to Break Audible DRM](https://kylepiira.com/2019/05/12/how-to-break-audible-drm/)
 - [Activation Key](https://github.com/inAudible-NG/tables)
