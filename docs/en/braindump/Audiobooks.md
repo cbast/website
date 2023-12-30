@@ -28,9 +28,35 @@ result
 
 # Convert aax to mp3
 ```bash
-$ ffmpeg -activation_bytes XXXX -i audiobook.aax audiobook.mp3
+ffmpeg -activation_bytes XXXX -i audiobook.aax audiobook.mp3
+```
+
+# Convert to chapters
+Extract chapters info:
+```bash
+ffprobe -i <filename.aax> -print_format json -show_chapters  2>&1 > chapters.json
+```
+
+Convert aax to mp3s
+```bash
+#!/bin/bash
+# Description: Split an 
+# Requires: ffmpeg, jq
+# Author: Hasan Arous
+# License: MIT
+
+in="$1"
+out="$2"
+splits=""
+while read start end title; do
+  splits="$splits -c copy -ss $start -to $end $out/$title.mp3"
+done <<<$(cat chapters.json \
+  | jq -r '.chapters[] | .start_time + " " + .end_time + " " + (.tags.title | sub(" "; "_"))')
+
+ffmpeg  -i "$in" $splits
 ```
 
 # Reference
 - [How to Break Audible DRM](https://kylepiira.com/2019/05/12/how-to-break-audible-drm/)
 - [Activation Key](https://github.com/inAudible-NG/tables)
+- [StackOverflow - Using ffmpeg to split an Audible audio-book into chapters](https://unix.stackexchange.com/a/612124)
