@@ -15,6 +15,7 @@ nav:
     - Bookmarklet: en/braindump/Bookmarklet.md
     - Heredoc: en/braindump/Heredoc.md
     - Docker: en/braindump/Docker.md
+    - DebugInfo: en/braindump/DebugInfo.md
 theme:
   name: material
 
