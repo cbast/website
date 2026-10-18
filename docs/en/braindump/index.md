@@ -2,8 +2,8 @@
 author: Sébastien Frigon
 ---
 # Braindump
+Writing stuff down to remember it in the future.
 
-There's so much to learn. Here's a list of things I found interesting or would like to read.
 
 ## Subjects
 - [DevContainer](DevContainer.md): Reproducible Docker Dev environment for VSCode.
