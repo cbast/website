@@ -12,6 +12,11 @@ nav:
     - Home: en/braindump/index.md
     - DevContainer: en/braindump/DevContainer.md
     - Nix: en/braindump/Nix.md
+  - Best Practices:
+    - Home: en/best-practices/index.md
+    - SOLID Principles: en/best-practices/SOLID.md
+    - Google Test: en/best-practices/google_test.md
+    - Logs: en/best-practices/logs.md
 theme:
   name: material
 
