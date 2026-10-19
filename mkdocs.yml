@@ -12,6 +12,10 @@ nav:
     - Home: en/braindump/index.md
     - DevContainer: en/braindump/DevContainer.md
     - Nix: en/braindump/Nix.md
+    - Bookmarklet: en/braindump/Bookmarklet.md
+    - Heredoc: en/braindump/Heredoc.md
+    - Docker: en/braindump/Docker.md
+    - DebugInfo: en/braindump/DebugInfo.md
   - Best Practices:
     - Home: en/best-practices/index.md
     - SOLID Principles: en/best-practices/SOLID.md
